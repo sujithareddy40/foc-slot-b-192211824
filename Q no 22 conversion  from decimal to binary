@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int decimal, binary[32], i, j;
+
+    printf("Enter a decimal number: ");
+    scanf("%d", &decimal);
+
+    for (i = 0; decimal > 0; i++) {
+        binary[i] = decimal % 2;
+        decimal = decimal / 2;
+    }
